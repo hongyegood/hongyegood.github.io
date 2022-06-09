@@ -52,9 +52,12 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-       <a-assets>
-	<img id="card" src="image/meditation-01.jpg" />
-	<a-asset-item id="avatarModel" src="  "></a-asset-item>
+      <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
+        <a-entity
+            gltf-model="model/dragon/scene.gltf"
+            scale="10 10 10"
+            position="0 0 0"
+			rotation="-90 0 0"
       </a-assets>
         >
         </a-entity>
