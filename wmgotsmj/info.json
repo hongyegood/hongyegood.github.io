@@ -1,0 +1,198 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://hiukim.github.io/mind-ar-js-doc/samples/advanced.html",
+            "path": "index.html",
+            "saved": true,
+            "size": 12094,
+            "children": [
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/card.png",
+                    "path": "img/card.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/web.png",
+                    "path": "img/web.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/location.png",
+                    "path": "img/location.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/profile.png",
+                    "path": "img/profile.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/phone.png",
+                    "path": "img/phone.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/email.png",
+                    "path": "img/email.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/play.png",
+                    "path": "img/play.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/left.png",
+                    "path": "img/left.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/icons/right.png",
+                    "path": "img/right.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/portfolio/paintandquest-preview.png",
+                    "path": "img/paintandquest-preview.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/portfolio/coffeemachine-preview.png",
+                    "path": "img/coffeemachine-preview.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/portfolio/peak-preview.png",
+                    "path": "img/peak-preview.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image.prod.js",
+                    "path": "js/mindar-image.prod.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://aframe.io/releases/1.2.0/aframe.min.js",
+                    "path": "js/aframe.min.js",
+                    "saved": true,
+                    "size": 1322836,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js",
+                    "path": "js/mindar-image-aframe.prod.js",
+                    "saved": true,
+                    "size": 6110,
+                    "children": []
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/portfolio/paintandquest.mp4",
+                    "saved": false
+                },
+                {
+                    "url": "https://hiukim.github.io/mind-ar-js-doc/samples/assets/card-example/portfolio/paintandquest.webm",
+                    "path": "media/paintandquest.webm",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "hiukim-github-io-wmgotsmj",
+    "info": {
+        "remark": [],
+        "title": "",
+        "domain": "hiukim.github.io",
+        "origin": "https://hiukim.github.io",
+        "ip": "185.199.108.153",
+        "main": "index.html",
+        "url": "https://hiukim.github.io/mind-ar-js-doc/samples/advanced.html",
+        "totalSize": "1.34 MB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://hiukim.github.io/mind-ar-js-doc/samples/advanced.html",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "https://hiukim.github.io/mind-ar-js-doc/samples/advanced.html",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "connection": "close",
+                "content-length": "12595",
+                "server": "GitHub.com",
+                "content-type": "text/html; charset=utf-8",
+                "permissions-policy": "interest-cohort=()",
+                "last-modified": "Sat, 26 Feb 2022 20:56:37 GMT",
+                "access-control-allow-origin": "*",
+                "etag": "\"621a9405-3133\"",
+                "expires": "Thu, 07 Jul 2022 04:54:54 GMT",
+                "cache-control": "max-age=600",
+                "x-proxy-cache": "MISS",
+                "x-github-request-id": "0CC2:56EC:60C4D:6966A:62C664C6",
+                "accept-ranges": "bytes",
+                "date": "Thu, 07 Jul 2022 04:44:54 GMT",
+                "via": "1.1 varnish",
+                "age": "0",
+                "x-served-by": "cache-tyo11932-TYO",
+                "x-cache": "MISS",
+                "x-cache-hits": "0",
+                "x-timer": "S1657169095.641857,VS0,VE150",
+                "vary": "Accept-Encoding",
+                "x-fastly-request-id": "33f7bb76cb56118b0b5f2dc12fc846bfb01236b3"
+            }
+        },
+        "time": {
+            "start": "2022-07-07T04:44:54.568Z",
+            "end": "2022-07-07T04:45:03.855Z"
+        }
+    },
+    "options": {
+        "url": "https://hiukim.github.io/mind-ar-js-doc/samples/advanced.html",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [],
+        "filenameGenerator": "byType"
+    }
+}
