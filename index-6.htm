@@ -14,7 +14,7 @@
      
 <a-asset-item id="avatarModel" src="./model/PLEASE AR.gltf"></a-asset-item>
       </a-assets>
- <video id="myvideo" src="video/paintandquest.mp4" type="video/webm" loop="true" playsinline autoplay></video>
+  <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="video/paintandquest.mp4"></video>
  <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
@@ -22,7 +22,7 @@
         <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.001 0.001 0.001" src="#avatarModel"
          
    
-             <a-plane src="#myvideo" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+           <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
         >
       </a-entity>
     </a-scene>
