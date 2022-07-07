@@ -102,12 +102,12 @@
 	"materials":[{
 		"name":"材质",
 		"pbrMetallicRoughness":{
-			"baseColorFactor":[1.0,
-			0.8,
-			0.22745098039215684,
+			"baseColorFactor":[0.6620573437755372,
+			0.013450025504040328,
+			0.8652849740932642,
 			1.0],
-			"metallicFactor":0.67,
-			"roughnessFactor":0.15
+			"metallicFactor":0.79,
+			"roughnessFactor":0.0
 		},
 		"emissiveFactor":[0.0,
 		0.0,
