@@ -1,0 +1,118 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://app.pictarize.com/p?projectId=62b2c51e91fd97001204dcba&buildId=62cc54de91fd97001204df0c",
+            "path": "index.html",
+            "saved": true,
+            "size": 3694,
+            "children": [
+                {
+                    "url": "https://www.googletagmanager.com/gtag/js?id=G-6PMRWRY63G",
+                    "saved": false
+                },
+                {
+                    "url": "https://app.pictarize.com/static/js/2.8527019b.chunk.js",
+                    "path": "js/2.8527019b.chunk.js",
+                    "saved": true,
+                    "size": 1304054,
+                    "children": []
+                },
+                {
+                    "url": "https://app.pictarize.com/static/js/main.d383e082.chunk.js",
+                    "path": "js/main.d383e082.chunk.js",
+                    "saved": true,
+                    "size": 55742,
+                    "children": []
+                },
+                {
+                    "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap",
+                    "saved": false
+                },
+                {
+                    "url": "https://app.pictarize.com/static/css/2.2a21c1cd.chunk.css",
+                    "path": "css/2.2a21c1cd.chunk.css",
+                    "saved": true,
+                    "size": 5692,
+                    "children": []
+                },
+                {
+                    "url": "https://app.pictarize.com/static/css/main.9e4b9757.chunk.css",
+                    "path": "css/main.9e4b9757.chunk.css",
+                    "saved": true,
+                    "size": 8479,
+                    "children": []
+                },
+                {
+                    "url": "https://app.pictarize.com/logo.png",
+                    "path": "img/logo.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "app-pictarize-com-ieevm50k",
+    "info": {
+        "remark": [],
+        "title": "Pictarize",
+        "domain": "app.pictarize.com",
+        "origin": "https://app.pictarize.com",
+        "ip": "104.16.244.78",
+        "main": "index.html",
+        "url": "https://app.pictarize.com/p?projectId=62b2c51e91fd97001204dcba&buildId=62cc54de91fd97001204df0c",
+        "totalSize": "1.38 MB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://app.pictarize.com/p?projectId=62b2c51e91fd97001204dcba&buildId=62cc54de91fd97001204df0c",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "https://app.pictarize.com/p?projectId=62b2c51e91fd97001204dcba&buildId=62cc54de91fd97001204df0c",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "date": "Mon, 11 Jul 2022 18:50:19 GMT",
+                "content-type": "text/html; charset=utf-8",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "last-modified": "Sun, 03 Apr 2022 23:12:10 GMT",
+                "x-rgw-object-type": "Normal",
+                "x-amz-request-id": "tx0000000000000068a91f0-0062cc70eb-319b2aa6-nyc3c",
+                "vary": "Origin, Access-Control-Request-Headers, Access-Control-Request-Method",
+                "cache-control": "public,max-age=10,s-maxage=86400",
+                "x-do-orig-status": "404",
+                "cf-cache-status": "MISS",
+                "accept-ranges": "bytes",
+                "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "server": "cloudflare",
+                "cf-ray": "7293b95b9da3b009-NRT"
+            }
+        },
+        "time": {
+            "start": "2022-07-11T18:50:18.639Z",
+            "end": "2022-07-11T18:50:22.351Z"
+        }
+    },
+    "options": {
+        "url": "https://app.pictarize.com/p?projectId=62b2c51e91fd97001204dcba&buildId=62cc54de91fd97001204df0c",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [],
+        "filenameGenerator": "byType"
+    }
+}
