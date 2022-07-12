@@ -11,7 +11,7 @@
 
      
 
-      <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/card.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene mindar-image="filterMinCF:0.01; filterBeta: 70; warmupTolerance: 1; uiLoading: #loading; uiScanning: #loading;imageTargetSrc: ./descriptors/Cynthia-1.mind" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"> 
         <a-assets>
          
          
