@@ -1,37 +1,30 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image.prod.js"></script>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js"></script>
-
-    </head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/mindar-image.prod.js"></script>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
+    <script src="js/mindar-image-aframe.prod.js"></script>
+  </head>
   <body>
-
-     
-
-      <a-scene mindar-image="filterMinCF:0.01; filterBeta: 70; warmupTolerance: 1; uiLoading: #loading; uiScanning: #loading;imageTargetSrc: ./descriptors/Cynthia-1.mind" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false"> 
-        <a-assets>
-         
-         
-          <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./video/hfghgfhA.mp4"></video>
-          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./video/hfghgfhA.mp4"></video>
-          
-          
-          
-
-        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
-        </a-camera>
-
+    <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+     <a-assets>
+	<a-assets> <video id="SSS-video" preload="auto" autoplay loop="true" crossOrigin="anonymous" muted src="https://www.v4verastegui.com/mindar-project/Scottmillersss.mp4" controls> </video></a-assets>
+<a-video src="#SSS-video" position="0 0 .05" width=".96" height=".54" rotation="0 0 0" preload="auto">`
        
+     
+<a-asset-item id="avatarModel" src="./model/PLEASE AR.gltf"></a-asset-item>
+      </a-assets>
 
-         
-              <a-video id="paintandquest-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
-              
-              
-        </a-entity>
-      </a-scene>
-    </div>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.001 0.001 0.001" src="#avatarModel"
+          animation="property: position; to: 0 0  0 ; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
+        
+        
+ >
+      </a-entity>
+    </a-scene>
   </body>
 </html>
