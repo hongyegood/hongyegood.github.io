@@ -10,6 +10,7 @@
     <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
          <a-assets>
 	<img id="card" src="./descriptors/meditation-02.jpg" />  
+                 <img id="card2" src="./descriptors/O1CN01K.jpg" />  
        
      
 <a-asset-item id="avatarModel" src="./model/PLEASE AR.gltf"></a-asset-item>
@@ -19,6 +20,7 @@
 
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+         <a-plane src="#card2" position="0 0 0" height="0.7" width="2" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.001 0.001 0.001" src="#avatarModel"
           animation="property: position; to: 0 0  0 ; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
         >
