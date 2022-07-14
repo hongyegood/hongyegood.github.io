@@ -10,19 +10,20 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
      <a-assets>
-               <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="video/paintandquest.mp4"></video>
-          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="video/paintandquest.mp4"></video>	
+            <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./video/paintandquest.mp4"></video>
+          <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./video/loxifeng.webm"></video>
      
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-      
-         
- <a-video id="paintandquest-video-mp4" webkit-playsinline="" playsinline="" width="1" height="0.552" position="0 0 0"></a-video>
+   <a-entity id="portfolio-item0">
+              <a-video id="paintandquest-video-link" webkit-playsinline playsinline width="1" height="0.552" position="0 0 0"></a-video>
+              <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0.5" position="0 0 0" height="0.552" width="1">
+              </a-image>
            
         
- >
+
       </a-entity>
     </a-scene>
   </body>
