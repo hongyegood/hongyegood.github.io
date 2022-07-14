@@ -6,10 +6,9 @@
     <script src="js/aframe-extras.min.js"></script>
     <script src="js/mindar-image-aframe.prod.js"></script>
   </head>
-// detect target found
-     targetMarker.addEventListener("targetFound", event => {
+videoObject.addEventListener('click', function(){
         videoObject.play();      
-    });
+});
   <body>
     <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
      <a-assets>
