@@ -1,0 +1,48 @@
+<html><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="js/mindar-image.prod.js"></script>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/mindar-image-aframe.prod.js"></script>
+
+    <script>
+      const showInfo = () => {
+        let y = 0;
+        const profileButton = document.querySelector("#profile-button");
+        const webButton = document.querySelector("#web-button");
+        const emailButton = document.querySelector("#email-button");
+        const locationButton = document.querySelector("#location-button");
+        const text = document.querySelector("#text");
+
+        
+
+     
+
+      <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind; showStats: false; uiScanning: #example-scanning-overlay;" embedded="" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-assets>
+          <img id="card" src="img/card.png">
+         
+          
+         
+          
+   
+          <a-asset-item id="avatarModel" src="media/Cynthia-lgo.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
+        </a-camera>
+
+        
+         
+            
+       
+
+          <a-gltf-model id="avatar" rotation="0 0 0" position="0 -0.25 0" scale="0.004 0.004 0.004" src="#avatarModel"></a-gltf-model>
+
+          
+        </a-entity>
+      </a-scene>
+    </div>
+  
+
+</body></html>
