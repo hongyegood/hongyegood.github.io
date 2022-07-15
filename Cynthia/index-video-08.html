@@ -14,7 +14,42 @@
         const locationButton = document.querySelector("#location-button");
         const text = document.querySelector("#text");
 
-        
+        profileButton.setAttribute("visible", true);
+        setTimeout(() => {
+          webButton.setAttribute("visible", true);
+        }, 300);
+        setTimeout(() => {
+          emailButton.setAttribute("visible", true);
+        }, 600);
+        setTimeout(() => {
+          locationButton.setAttribute("visible", true);
+        }, 900);
+
+        let currentTab = '';
+        webButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "https://softmind.tech");
+          currentTab = 'web';
+        });
+        emailButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "hello@softmind.tech");
+          currentTab = 'email';
+        });
+        profileButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "AR, VR solutions and consultation");
+          currentTab = 'profile';
+        });
+        locationButton.addEventListener('click', function (evt) {
+          console.log("loc");
+          text.setAttribute("value", "Vancouver, Canada | Hong Kong");
+          currentTab = 'location';
+        });
+
+        text.addEventListener('click', function (evt) {
+          if (currentTab === 'web') {
+            window.location.href="https://softmind.tech";
+          }
+        });
+      }
 
       const showPortfolio = (done) => {
         const portfolio = document.querySelector("#portfolio-panel");
@@ -214,7 +249,7 @@
          
             
               <a-video id="paintandquest-video-link" webkit-playsinline="" playsinline="" width="1" height="0.852" position="0 -0.5 0"></a-video>
-              <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0.5" position="0 -0.5 0" height="0.852" width="1">
+              <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview" alpha-test="0" position="0 -0.5 0" height="0.852" width="1">
               </a-image>
             </a-entity>
            
@@ -226,7 +261,7 @@
           </a-entity>
 
 
-          <a-gltf-model id="avatar" rotation="0 0 0" position="0.5 0.1 0" scale="0.304 0.304 0.304" src="#avatarModel"animation-mixer>
+          <a-gltf-model id="avatar" rotation="0 0 0" position="0.5 0 0" scale="0.304 0.304 0.304" src="#avatarModel"animation-mixer>
 
           
         </a-entity>
