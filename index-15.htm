@@ -2,9 +2,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
+        <script src="js/mindar-image.prod.js"></script>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
+    <script src="js/mindar-image-aframe.prod.js"></script>
     <script>
         AFRAME.registerComponent("video-controller", {
             init: function () {
@@ -49,7 +50,7 @@
         device-orientation-permission-ui="enabled: false" cursor="rayOrigin: mouse;"
         raycaster="objects: .clickable">
         <a-assets>
-            <video id="video" src="https://gftruj.github.io/webzamples/aframe/assets/videos/sintel_trailer-480p.mp4" preload>
+            <video id="video" src="video/paintandquest.mp4" preload>
             </video>
         </a-assets>
 
