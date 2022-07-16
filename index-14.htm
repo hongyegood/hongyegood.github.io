@@ -1,100 +1,27 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
-    <script>
-      AFRAME.registerComponent("alpha-video", {
-        init: function() {
-          this.materialLoaded = this.materialLoaded.bind(this);
-          console.log("init");
-          // wait until the material is ready
-          this.el.addEventListener("loaded", this.materialLoaded);
-        },
-        materialLoaded: function() {
-          // grab the material
-          let material = this.el.getObject3D("mesh").material;
-          console.log(material.map.format);
-
-          // swap the format
-          material.map.format = THREE.RGBAFormat;
-          material.map.needsUpdate = true;
-          console.log(material.map);
-        },
-        remove: function() {
-          this.el.removeEventListener("loaded", this.materialLoaded);
-        }
-      });
-      // clickable
-      AFRAME.registerComponent("play-on-click", {
-        init: function() {
-          document.body.addEventListener("click", e => {
-            const src = this.el.getAttribute("src");
-            document.querySelector(src).play();
-          });
-        }
-      });
-    </script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-image-aframe.prod.js"></script>
   </head>
-  <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-      <a-assets>
-        <video
-          id="soccer"
-          crossorigin="anonymous"
-          src="https://rawcdn.githack.com/gftruj/webzamples/b500ecb2171e288ae6a14a917816d300a6d374c3/aframe/assets/videos/soccer/soccer1.webm"
-          preload="auto"
-          autoplay
-          loop="true"
-        ></video>
-        <video
-          id="vid-1"
-          loop="true"
-          crossorigin="anonymous"
-          src="https://rawcdn.githack.com/photonstorm/phaser-examples/0a52334b78ce8150bca8e57149431572b75ed8a0/examples/assets/video/chrome.webm"
-        ></video>
-        <video
-          id="vid-2"
-          loop="true"
-          crossorigin="anonymous"
-          src="https://rawcdn.githack.com/photonstorm/phaser-examples/0a52334b78ce8150bca8e57149431572b75ed8a0/examples/assets/video/alpha-webm.webm"
-        ></video>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+     <a-assets>
+            <video id="arvideo" autoplay  webkit-playsinline  loop="true" src="video/paintandquest.mp4"></video>
+	
+<a-asset-item id="avatarModel" src="./model/Angel.glb"></a-asset-item>
       </a-assets>
 
-      <a-marker preset="hiro">
-        <a-video
-          play-on-click
-          alpha-video
-          width="1.32"
-          height="1"
-          rotation="270 0 0"
-          position="0 0.10 0"
-          src="#vid-1"
-          material="transparent: true"
-        ></a-video>
-        <a-video
-          play-on-click
-          alpha-video
-          width="1.32"
-          height="1"
-          rotation="270 0 0"
-          position="0 0.14 0"
-          src="#soccer"
-          material="transparent: true"
-        ></a-video>
-        <a-video
-          play-on-click
-          alpha-video
-          width="1.32"
-          height="1"
-          rotation="270 0 0"
-          position="0 0.18 0"
-          src="#vid-2"
-          material="transparent: true"
-        ></a-video>
-      </a-marker>
-      <a-entity camera></a-entity>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+         <a-video src="#arvideo" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-video>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.121 0.121 0.121" src="#avatarModel"animation-mixer>
+      </a-gltf>
+  
+      </a-entity>
     </a-scene>
   </body>
 </html>
