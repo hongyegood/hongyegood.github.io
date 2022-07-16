@@ -7,7 +7,9 @@
     <script src="js/aframe-extras.min.js"></script>
     <script src="js/mindar-image-aframe.prod.js"></script>
     <script>
-        AFRAME.registerComponent("video-controller", {
+      
+
+  AFRAME.registerComponent("video-controller", {
             init: function () {
                 const target = document.getElementById("target");
                 const btn = document.querySelector("button");
@@ -39,9 +41,7 @@
 
 <body>
    <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey'>
-      
-        
-        <button>Play video</button> - if the plane is black on mobile.
+       <button>Play video</button> - if the plane is black on mobile.
         
     </div>
     <a-scene
@@ -49,10 +49,10 @@
         color-space="sRGB" renderer="colorManagement: true" vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false" cursor="rayOrigin: mouse;"
         raycaster="objects: .clickable">
+
         <a-assets>
-            <video id="video"autoplay="false" loop="true" src="video/paintandquest.mp4" preload>
-            </video>
-           <a-asset-item id="avatarModel" src="./model/Angel.glb"></a-asset-item>
+            <video id="video"autoplay="false" loop="true" src="video/paintandquest.mp4" preload></video>
+             <a-asset-item id="avatarModel" src="./model/Angel.glb"></a-asset-item>
 
         </a-assets>
 
