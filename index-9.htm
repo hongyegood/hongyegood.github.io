@@ -3,21 +3,30 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="js/mindar-image.prod.js"></script>
     <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
     <script src="js/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
      <a-assets>
-      <img id="videocontrols" src="./descriptors/meditation-02.jpg" />  
-       
-    </a-assets>
-    <a-camera position="0 0 0" vr-mode-ui="enabled: false" look-controls="enabled: false"></a-camera>
-    
-    
-        <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+               <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="video/hfghgfhA.mp4"></video>
+     
+<a-asset-item id="avatarModel" src="./model/Angel.glb"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+         <a-video id="paintandquest-video-mp4" webkit-playsinline="" playsinline="" width="1" height="0.852" position="0 -0.5 0"></a-video>
+        <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.121 0.121 0.121" src="#avatarModel"animation-mixer>
+      </a-gltf>
+  
+          
 
 
-      </a-entity>
+        
+ 
+   </a-entity>
     </a-scene>
   </body>
 </html>
