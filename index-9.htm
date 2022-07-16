@@ -5,6 +5,36 @@
     <script src="js/aframe.min.js"></script>
     <script src="js/aframe-extras.min.js"></script>
     <script src="js/mindar-image-aframe.prod.js"></script>
+<script>
+        AFRAME.registerComponent("video-controller", {
+            init: function () {
+                const target = document.getElementById("target");
+                const btn = document.querySelector("button");
+                const video = document.getElementById("video");
+
+                // detect target found
+                target.addEventListener("targetFound", event => {
+                    console.log("target found");
+                    this.found = true;
+                    video.play();
+                });
+                // detect target lost
+                target.addEventListener("targetLost", event => {
+                    console.log("target lost");
+                    this.found = false
+                    video.pause();
+                });
+                // detect click event
+                btn.addEventListener("click", event => {
+                    console.log("btn click");
+                    if (this.found)
+                        video.play();
+                });
+            }
+        })
+
+
+
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: /descriptors/Cynthia-1.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
