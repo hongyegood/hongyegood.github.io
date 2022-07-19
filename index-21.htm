@@ -14,7 +14,7 @@
   AFRAME.registerComponent("video-controller", {
             init: function () {
                 const target = document.getElementById("target");
-                const btn = document.querySelector("button");
+                const btn = document.querySelector("video");
                 const video = document.getElementById("video");
               
               // detect target found
@@ -42,8 +42,7 @@
 </head>
 
 <body>
-   <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: White'>
-       <button><img id="card2" src="https://hongyegood.github.io/Cynthia/img/coffeemachine-preview.png" height="20" width="100"/>  </button> - PLEASE AR  
+   
         
     </div>
     <a-scene
