@@ -53,7 +53,7 @@
 
         <a-assets>
               <img id="card" src="./descriptors/meditation-02.jpg" />  
-<video id="video2"autoplay="false" loop="true" src="video/hfghgfhA.mp4" preload></video>
+            <video id="video2"autoplay="false" loop="true" src="video/hfghgfhA.mp4" preload></video>
             <video id="video"autoplay="false" loop="true" src="video/paintandquest.mp4" preload></video>
            
              <a-asset-item id="avatarModel" src="./model/Angel.glb"></a-asset-item>
@@ -62,7 +62,8 @@
 
         </a-assets>
 
-        <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
+        </a-camera>
         <a-entity id="target" mindar-image-target="targetIndex: 0">
             
 <a-plane src="#card" position="1 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
@@ -74,7 +75,7 @@
 
            <a-gltf-model rotation="0 0 0 " position="0 -0.5 0" scale="0.321 0.321 0.321" src="#avatarModel"animation-mixer>
       </a-gltf>
- <a-gltf-model rotation="0 0 0 " position="-1 0 0" scale="0.051 0.051 0.051" src="#avatarModel2"animation-mixer>
+ <a-gltf-model rotation="0 0 0 " position="-2.5 0 0" scale="0.051 0.051 0.051" src="#avatarModel2"animation-mixer>
       </a-gltf>
         </a-entity>
     </a-scene>
