@@ -55,7 +55,8 @@
              
             
             <video id="video"autoplay muted loop playsinline src="https://hongyegood.github.io/video/hfghgfhA.mp4" preload></video>
-           
+             <audio id="sound" src="https://hongyegood.github.io/video/mtv-aa.mp3" preload="auto"></audio>
+       
              <a-asset-item id="avatarModel" src="https://hongyegood.github.io/model/Angel.glb"></a-asset-item>
              
 
@@ -65,13 +66,11 @@
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
         <a-entity id="target" mindar-image-target="targetIndex: 0">
             
+        <a-entity sound="src: #sound" autoplay="false"></a-entity>
 
-
-          <a-plane class="clickable"autoplay  material="src: #video"position="0 0 0"  rotation="0 0 0" scale="0.8 0.8 0"    video-controller></a-plane>
+         <a-plane class="clickable"autoplay  material="src: #video"position="0 0 0"  rotation="0 0 0" scale="0.8 0.8 0"    video-controller></a-plane>
             
-
-
-
+         
            <a-gltf-model rotation="0 0 0 " position="0 0 0" scale="0.25 0.25 0.25" src="#avatarModel"animation-mixer> </a-gltf>
      
            
