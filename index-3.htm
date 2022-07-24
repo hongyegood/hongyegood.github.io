@@ -1,80 +1,86 @@
-﻿<script src="https://please-ar.com/js/aframe-master.min.js"></script>
-<script src="https://please-ar.com/js/aframe-extras.min.js"></script>
+﻿
+<html>
 
-<script src="https://please-ar.com/js/aframe-ar-nft.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://please-ar.com//js/mindar-image.prod.js"></script>
+    <script src="https://please-ar.com//js/aframe.min.js"></script>
+    <script src="https://please-ar.com//js/aframe-extras.min.js"></script>
+    <script src="https://please-ar.com//js/mindar-image-aframe.prod.js"></script>
+    <script>
+      
 
-<script>
-    window.onload = function() {
-        AFRAME.registerComponent('videohandler', {
+  AFRAME.registerComponent("video-controller", {
             init: function () {
-                var marker = this.el;
-
-                this.vid = document.querySelector("#vid");
-
-                marker.addEventListener('markerFound', function () {
-                    this.vid.play();
-                }.bind(this));
-
-		marker.addEventListener('markerLost', function() {
-			this.vid.pause();
-			this.vid.currentTime = 0;
-		}.bind(this));
+                const target = document.getElementById("target");
+                const btn = document.querySelector("button");
+                const video = document.getElementById("video");
+              
+              // detect target found
+                target.addEventListener("targetFound", event => {
+                    console.log("target found");
+                    this.found = true;
+                    video.play();
+                });
+                // detect target lost
+                target.addEventListener("targetLost", event => {
+                    console.log("target lost");
+                    this.found = false
+                    video.pause();
+                });
+                // detect click event
+                btn.addEventListener("click", event => {
+                    console.log("btn click");
+                    if (this.found)
+                        video.play();
+                });
             }
-        });
-    };
-</script>
+        })
 
-<style>
-    .arjs-loader {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    </script>
+</head>
 
-    .arjs-loader div {
-        text-align: center;
-        font-size: 1.25em;
-        color: white;
-    }
-</style>
-
-<body style='margin : 0px; overflow: hidden;'>
-    <div class="arjs-loader">
-        <div>Loading, please wait...</div>
+<body>
+    <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey'>
+       
+        <button>Play video</button> - 点击播放视频.
+        
     </div>
     <a-scene
-        vr-mode-ui="enabled: false;"
-        renderer='antialias: true; alpha: true; precision: medium;'
-        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        mindar-image="imageTargetSrc: https://please-ar.com/descriptors/Cynthia-A.mind;"
+        color-space="sRGB" renderer="colorManagement: true" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false" cursor="rayOrigin: mouse;"
+        raycaster="objects: .clickable">
 
         <a-assets>
-            <video src="https://please-ar.com/video/Cynthia-AA22.mp4"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
-            </video>
-        </a-assets>
-       
-        <a-nft
-            videohandler
-            type="nft" url="https://please-ar.com/descriptors/meditation-02"
-            smooth="true" smoothcount="10" smoothtolerance="0.01" smooththreshold="5"
-        >
-            <a-video
-                src="#vid"
-                position="0 0 0"  rotation="90 0 180" width="200" height="200"
-                >
-            </a-video>
-          
             
-        </a-nft>
-      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
-		<a-entity camera></a-entity>
-	</a-scene>
+            
+            <video id="video"autoplay="false" loop="true" src="https://please-ar.com//video/Cynthia-AA22.mp4" preload></video>
+         
+       
+             <a-asset-item id="avatarModel" src="https://please-ar.com//model/Ange-bb.glb"></a-asset-item>
+           
+             
+
+
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
+        </a-camera>
+        <a-entity id="target" mindar-image-target="targetIndex: 0">
+            
+  
+
+          <a-plane class="clickable"autoplay  material="src: #video"position="0 0 0"  rotation="0 0 0" scale="1 1.5 0" video-controller></a-plane>
+            
+         
+           <a-gltf-model rotation="0 180 0" position="0 0 0.1" scale="0.6 0.6 0.6" src="#avatarModel"animation-mixer> </a-gltf>
+     
+         
+                                               
+      </a-gltf>
+        </a-entity>
+    </a-scene>
 </body>
+
