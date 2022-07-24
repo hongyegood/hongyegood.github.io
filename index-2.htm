@@ -1,5 +1,5 @@
 ﻿<script src="https://please-ar.com/js/aframe-master.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
 <script src="https://please-ar.com/js/aframe-ar-nft.js"></script>
 
@@ -60,7 +60,7 @@
                 crossorigin webkit-playsinline autoplay muted playsinline>
             </video>
         </a-assets>
-
+       
         <a-nft
             videohandler
             type="nft" url="https://please-ar.com/descriptors/meditation-02"
@@ -71,6 +71,11 @@
                 position="300 0 0"  rotation="90 0 180" scale="300 300 0"
                 >
             </a-video>
+           <a-entity
+                gltf-model="https://please-ar.com/model/Ange-bb.gltf"
+                position="300 100 10"  rotation="90 0 180" scale="50 50 50" animation-mixer 
+                ></a-entity>
+            
         </a-nft>
 		<a-entity camera></a-entity>
 	</a-scene>
