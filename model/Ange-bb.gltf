@@ -30,9 +30,9 @@
 		0.04500638693571091,
 		0.29199281334877016],
 		"rotation":[0.0,
-		0.08050718903541565,
+		0.497087299823761,
 		0.0,
-		0.9967540502548218],
+		-0.8677005171775818],
 		"scale":[1.0,
 		1.0,
 		1.0]
@@ -43,10 +43,10 @@
 		"translation":[-0.5644650459289551,
 		0.12591339647769929,
 		0.26101434230804446],
-		"rotation":[0.0,
-		0.027902116999030114,
-		0.0,
-		0.9996106624603272],
+		"rotation":[-4.056399660612442e-9,
+		0.544440746307373,
+		-6.249541772973544e-9,
+		0.8387992978096008],
 		"scale":[1.0,
 		1.0,
 		1.0]
@@ -58,9 +58,9 @@
 		1.8193439245224,
 		-0.015348353423178196],
 		"rotation":[0.0,
-		0.3393334448337555,
+		0.672956645488739,
 		0.0,
-		0.940666139125824],
+		0.7396819591522217],
 		"scale":[1.0,
 		1.0,
 		1.0]
@@ -496,8 +496,8 @@
 			1.0,
 			1.0,
 			1.0],
-			"metallicFactor":1.0,
-			"roughnessFactor":1.0
+			"metallicFactor":0.0,
+			"roughnessFactor":0.5
 		},
 		"emissiveFactor":[0.0,
 		0.0,
@@ -515,8 +515,8 @@
 			1.0,
 			1.0,
 			1.0],
-			"metallicFactor":1.0,
-			"roughnessFactor":1.0
+			"metallicFactor":0.0,
+			"roughnessFactor":0.5
 		},
 		"emissiveFactor":[0.0,
 		0.0,
@@ -534,8 +534,8 @@
 			1.0,
 			1.0,
 			1.0],
-			"metallicFactor":1.0,
-			"roughnessFactor":1.0
+			"metallicFactor":0.0,
+			"roughnessFactor":0.5
 		},
 		"emissiveFactor":[0.0,
 		0.0,
@@ -550,12 +550,12 @@
 			1.0,
 			1.0,
 			1.0],
-			"metallicFactor":1.0,
-			"roughnessFactor":1.0
+			"metallicFactor":0.0,
+			"roughnessFactor":0.5
 		},
-		"emissiveFactor":[0.0,
-		0.0,
-		0.0],
+		"emissiveFactor":[1.0,
+		1.0,
+		1.0],
 		"alphaMode":"OPAQUE",
 		"doubleSided":true,
 		"name":"材质.2"
