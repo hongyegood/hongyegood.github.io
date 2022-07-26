@@ -1,0 +1,86 @@
+﻿
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://please-ar.com//js2/mindar-image.prod.js"></script>
+    <script src="https://please-ar.com//js2/aframe.min.js"></script>
+    <script src="https://please-ar.com//js2/aframe-extras.min.js"></script>
+    <script src="https://please-ar.com//js2/mindar-image-aframe.prod.js"></script>
+    <script>
+      
+
+  AFRAME.registerComponent("video-controller", {
+            init: function () {
+                const target = document.getElementById("target");
+                const btn = document.querySelector("button");
+                const video = document.getElementById("video");
+              
+              // detect target found
+                target.addEventListener("targetFound", event => {
+                    console.log("target found");
+                    this.found = true;
+                    video.play();
+                });
+                // detect target lost
+                target.addEventListener("targetLost", event => {
+                    console.log("target lost");
+                    this.found = false
+                    video.pause();
+                });
+                // detect click event
+                btn.addEventListener("click", event => {
+                    console.log("btn click");
+                    if (this.found)
+                        video.play();
+                });
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <div style='position: fixed; top: 10px; width: 100%; text-align: center; z-index: 1; color: grey'>
+       
+        <button>Play video</button> - 点击播放视频.
+        
+    </div>
+    <a-scene
+        mindar-image="imageTargetSrc: https://please-ar.com/descriptors/meditation.mind;"
+        color-space="sRGB" renderer="colorManagement: true" vr-mode-ui="enabled: false"
+        device-orientation-permission-ui="enabled: false" cursor="rayOrigin: mouse;"
+        raycaster="objects: .clickable">
+
+        <a-assets>
+            
+            
+            <video id="video"autoplay="false" loop="true" src="https://please-ar.com//video/paintandquest.mp4" preload></video>
+         
+       
+             
+           
+             
+
+
+        </a-assets>
+
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
+        </a-camera>
+        <a-entity id="target" mindar-image-target="targetIndex: 0">
+            
+  
+
+          <a-plane class="clickable"autoplay  material="src: #video"position="0 0 0"  rotation="0 0 0" scale="1 1 0" video-controller></a-plane>
+            
+         
+          
+     
+         
+                                               
+      </a-gltf>
+        </a-entity>
+    </a-scene>
+</body>
+
